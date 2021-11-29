@@ -1,0 +1,5 @@
+{
+  "name": "pokah2",
+  "region": "us-east-2",
+  "main": "stacks/index.js"
+}
