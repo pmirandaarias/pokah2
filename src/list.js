@@ -18,6 +18,5 @@ export const main = handler(async () => {
   const result = await dynamoDb.query(params);
 
   // Return the matching list of items in response body
-  console.log('result', result);
-  return result;
+  return result.Items;
 });
