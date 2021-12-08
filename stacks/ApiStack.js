@@ -18,6 +18,8 @@ export default class ApiStack extends sst.Stack {
           STRIPE_SECRET_KEY: process.env.STRIPE_SECRET_KEY,
         },
       },
+      // Enabled by default
+      cors: true,
       routes: {
         "POST   /notes": "src/create.main",
         "GET    /notes/{id}": "src/get.main",
